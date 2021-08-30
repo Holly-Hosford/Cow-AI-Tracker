@@ -3,10 +3,10 @@ from datetime import timedelta
 import sys
 
 cow_dict = {}
-add = open("practice.txt", "a")
-read = open("practice.txt", "r")
+add = open("cow_ai_info.txt", "a")
+read = open("cow_ai_info.txt", "r")
 if len(read.readlines()) > 0:
-    with open("practice.txt", "r") as read:
+    with open("cow_ai_info.txt", "r") as read:
         cow_dict = eval(read.read())
 
 
@@ -42,7 +42,7 @@ def repeat(number):
 
 def decide_function(start, number):
     if start == "exit":
-        new = open("practice.txt", "w")
+        new = open("cow_ai_info.txt", "w")
         new2 = open("cow_ai_info2.0.txt", "w")
         new.write(str(cow_dict))
         for key, val in cow_dict.items():
