@@ -1,0 +1,1 @@
+This file is setup to connect to the program and make a list of the cows entered and their details.
